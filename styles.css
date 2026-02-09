@@ -1,0 +1,314 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+
+}
+    /*
+    example colors
+
+    #8e0000
+    a60202
+    fde4bd
+    0e7f27
+    */
+    body{
+        font-family: 'lato', serif;
+        background-image: linear-gradient(to bottom right, #fde4bd, #d8c4a1, #9f9076);
+        /*this is how I got rid of the weird gradient in the end of the body section*/
+        background-attachment: fixed;
+    }
+
+    h1 {
+        color: #8e0000;
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+
+        font-family: 'leto', serif;
+    }
+
+    #intro-logo{
+        width: 76px;
+        /*border-bottom: 3px solid #8e0000;*/
+        padding-bottom: 5px;
+    }
+
+    .navbar{
+        /*this is done to allow the logo to be on same row as navbar links*/
+        display: flex;
+    }
+
+    .nav-container {
+        width: 100vw;
+        min-height: 9vh;
+        /*background-color: #d8c4a1;*/
+        /*border-bottom: 3px solid #8e0000;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-container a {
+    text-decoration: none;
+    color: #a60202;
+    font-size: clamp(.9rem, 2vw, 2rem);
+    font-weight: bold;
+    }
+
+    .nav-links{
+        width: 100%;
+        /*background-color: #9f9076;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .nav-links a:hover {
+
+        color: #0e7f27;
+        transition: all 0.3s ease;
+    }
+    #red-line-1{
+        border-bottom: 3px solid #a60202;
+        width: 100%;
+    }
+
+    .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        /*background-color: #0e7f27;*/
+    }
+
+    .logo-background {
+        border: 3px solid #a60202;
+        background-color: #040000;
+        justify-content: center;
+        text-align: center;
+        width: clamp(.5rem, 70vw, 29rem);
+        height: clamp(.5rem, 70vw, 29rem);
+        margin: 2rem auto;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: 2rem;
+        padding-top: 2.5rem;
+        border-radius: 100%;
+    }
+    .logo-img {
+        /*align-content: center;*/
+        align-self: center;
+        width: clamp(1rem, 40vw, 18rem);
+        /*width: 64%;*/
+    }
+
+    .red-line{
+        /*justify-content: center;*/
+        margin: 0 auto;
+        width: 50%;
+        border-bottom: 2px solid #a60202;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+
+    }
+    .hero-container p {
+        padding-bottom: 2.5rem;
+    }
+
+    .about-us-background {
+        /*background-color: #0e7f27;*/
+        border-radius: 10px;
+        /*padding: .5rem ;*/
+        margin:  0 auto;
+        width: auto;
+        /*height: 40vh;*/
+        height: clamp(.5rem, 40vw, 29rem);
+    }
+
+    .about-us{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+        /*padding-bottom: 100rem;*/
+
+    }
+    .about-us-container{
+        max-width: 1500px;
+        max-height: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /*background-color: #0e7f27;*/
+        border: 3px solid #a60202;
+        /*width: 80%;*/
+        padding: 1rem;
+
+        border-radius: 20px;
+    }
+    #about-h1{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .about-us p{
+        text-align: center;
+        color: #000000;
+        padding: 1.5rem;
+        font-size: clamp(1rem, 1.5vw, 1.75rem);
+        margin: 0 1rem;
+    }
+    #red-line-2{
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .deals{
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: start;
+        text-align: center;
+        width: 100%;
+        min-height: 30vh;
+        /*margin: 0 auto;*/
+        padding-top: 1rem;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1rem;
+
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid #8e0000;
+        background-color: #0e7f27;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0 1rem;
+        min-width: 300px;
+        min-height: 360px;
+        /*width: clamp(.5rem, 30vw, 29rem);*/
+        /*height: clamp(.5rem, vh, 29rem);*/
+        /*min-height: 30vh;*/
+    }
+    .card h2{
+        /*color: #000000;*/
+        margin-bottom: 1rem;
+    }
+    .card-img{
+        /*aspect-ratio: 1 / 1 ;*/
+        /*object-fit: cover;*/
+        /*object-position: center;*/
+        display: block;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+        /*width: 100%;*/
+        /*height: 50px;*/
+    }
+    .caption{
+        font-weight: bold;
+        padding: .5rem;
+    }
+    .price{
+        font-size: 1.25rem;
+        color: #a60202;
+        font-weight: bold;
+    }
+    .was-price{
+        font-size: 1rem;
+        font-weight: normal;
+        color: black;
+    }
+
+
+    .contact{
+        height: 16vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact h1 {
+        margin: 2rem 0;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+        background: #8e0000;
+    }
+    .contact-container a{
+        padding: 0 2rem;
+        text-decoration: none;
+        color: #fde4bd;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        font-weight: bold;
+    }
+    .contact-container a:hover {
+        color: #0e7f27;
+        transition: all 0.3s ease;
+    }
+
+
+
+
+
+    @media screen and (max-width: 1000px){
+
+        .about-us-container{
+            flex-direction: column;
+            max-height: fit-content;
+            width: clamp(.5rem, 70vw, 300rem);
+        }
+        .about-us p{
+
+        }
+        .about-us-background{
+            width: 65vw;
+        }
+
+    }
+
+    @media screen and (max-width: 800px) {
+        #intro-logo {
+            display: none;
+        }
+
+
+    }
