@@ -74,6 +74,10 @@
     .nav-container a:hover {
         color: #0e7f27;
     }
+    a:focus-visible {
+        outline: 3px solid #0e7f27;
+        outline-offset: 3px;
+    }
     #red-line-1{
         border-bottom: 3px solid #a60202;
         width: 100%;
@@ -436,6 +440,12 @@
         .nav-container{
             gap: 1rem;
         }
+        .footer-content p{
+            width: 40%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
 
     }
 
