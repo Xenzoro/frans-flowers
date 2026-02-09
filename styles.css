@@ -25,7 +25,6 @@
         font-family: 'Playfair Display', serif;
     }
     p{
-
         font-family: 'leto', serif;
     }
 
@@ -191,7 +190,7 @@
         text-align: center;
         color: #000000;
         padding: 1.5rem;
-        font-size: clamp(1rem, 1.5vw, 1.75rem);
+        font-size: clamp(1rem, 1.75vw, 1.75rem);
         margin: 0 1rem;
     }
     #red-line-2{
@@ -235,7 +234,7 @@
         padding: 1rem;
         margin: 1rem;
         width: 360px;
-        height: 450px;
+        height: 480px;
         transition: all 0.3s ease;
         transform: scale(1);
         /*width: clamp(.5rem, 30vw, 29rem);*/
@@ -307,30 +306,76 @@
     }
 
 
-
-
-
-
-    .contact{
-        height: 16vh;
+    .contact-info{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+    }  .contact-info h1{
+           align-self: center;
+           margin: 2rem;
+       }
+       .contact-info p{
+           width: 900px;
+           align-self: center;
+           margin-bottom: 2rem;
+       }
+
+       .address-block{
+           /*margin: rem;*/
+           width: 900px;
+           display: flex;
+           flex-direction: row;
+       }
+       .phone-block{
+           margin-top: 2rem;
+           width: 900px;
+           display: flex;
+           flex-direction: row;
+       }
+       .phone-block a{
+           color: #a60202;
+           text-decoration: underline;
+           text-decoration-color: #a60202;
+       }
+    .map{
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        justify-content: center;
+        /*align-items: center;*/
+
+        margin-bottom: 3rem;
+        width: 900px;
         text-align: center;
     }
-    .contact h1 {
+
+
+
+
+
+    iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 10px;
+    }
+    .map h1 {
+
+
+
         margin: 2rem 0;
     }
     .contact-container{
+        height: 8vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         width: 100%;
-        height: 100%;
         background: #8e0000;
     }
     .contact-container a{
@@ -346,6 +391,11 @@
         transition: all 0.3s ease;
         transform: scale(1.25);
 
+    }
+    .footer-content{
+
+        text-align: center;
+    background-color: #8e0000;
     }
 
 
